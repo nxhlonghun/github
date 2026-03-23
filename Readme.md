@@ -1,4 +1,4 @@
-#1.使用sw插件导出urdf文件
+# 1.使用sw插件导出urdf文件
 插件名称:sw_urdf_exporter  https://github.com/ros/solidworks_urdf_exporter/releases
 插件位置:![alt text](image/image-1.png)
 插件使用方法:
@@ -17,17 +17,17 @@
             从上到下分别是自动识别，高副，转动副，移动副和固定副
         6.之后所有的子组件操作方式与第五步相同，直到完整所有组件
         7.再完成并检查无误之后，点击Preview and Export...再次检查，该插件会自动生成各部分的质量以及惯性矩阵，无需手动修改，之后点击Export URDF and Meshes进行文件导出（需要修改名字要不然名字会太长）
-#2.新建webots工程文件:
+2.新建webots工程文件:
         1.打开webots新建工程文件，在下图这一步只勾选第一个
             ![alt text](image-13.png)
-#3.文件转换:
+3.文件转换:
         1.得到sw插件导出的文件之后，将其拷贝到webots工程文件的protos目录下
             ![alt text](image-10.png)
         2.在该文件目录下打开终端使用pip install urdf2webots命令安装文件转换插件（需要先安装python，且python版本需要 Python 3.5 或更高版本）
             ![alt text](image-11.png)
         3.插件安装完成后，使用python -m urdf2webots.importer --input=（urdf文件绝对路径）命令导出proto文件
             ![alt text](image-12.png)
-#4.导入webots:  
+4.导入webots:  
         1.打开刚才新建的webots工程，点击上方的暂停键，删除世界中的背景，之后再3D框中右键点击新增
             ![alt text](image-21.png)
             ![alt text](image-14.png)
