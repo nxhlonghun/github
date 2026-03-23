@@ -1,4 +1,4 @@
-# 1.使用sw插件导出urdf文件
+1.使用sw插件导出urdf文件
 插件名称:sw_urdf_exporter  https://github.com/ros/solidworks_urdf_exporter/releases
 插件位置:![alt text](image/image-1.png)
 插件使用方法:
